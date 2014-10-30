@@ -1,0 +1,8 @@
+target "Headless Target"
+
+with source, requirements
+
+location "http://download.eclipse.org/eclipse/updates/4.4" {
+	org.eclipse.equinox.sdk.feature.group lazy
+	org.eclipse.platform.ide lazy
+}
