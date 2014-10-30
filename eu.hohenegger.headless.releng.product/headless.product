@@ -28,7 +28,6 @@
 
    <features>
       <feature id="eu.hohenegger.headless.feature"/>
-      <feature id="org.eclipse.platform"/>
       <feature id="org.eclipse.equinox.core.feature"/>
    </features>
 
