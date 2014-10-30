@@ -18,11 +18,23 @@ public class Application implements IApplication {
 			System.out.println(string);
 		}
 
+		waitForGoshCommandToBeRegistered();
+
 		return IApplication.EXIT_OK;
+	}
+
+	private void waitForGoshCommandToBeRegistered() {
+		// this is just to workaround the 'sleep interrupted' that otherwise
+		// would be thrown in: org.apache.felix.gogo.shell.Activator
+		try {
+			Thread.sleep(100);
+		} catch (Exception e) {
+			// do nothing
+		}
 	}
 
 	@Override
 	public void stop() {
-		// nothing to do
+
 	}
 }
