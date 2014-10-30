@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Headless Product" uid="eu.hohenegger.headless.product" id="eu.hohenegger.headless.headless_product" application="eu.hohenegger.headless" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-application eu.hohenegger.headless -consoleLog
+      </programArgs>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher name="headless">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="eu.hohenegger.headless.feature"/>
+      <feature id="org.eclipse.platform"/>
+      <feature id="org.eclipse.equinox.core.feature"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="1" />
+   </configurations>
+
+</product>

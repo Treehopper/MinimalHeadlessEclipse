@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="eu.hohenegger.headless"
+         name="Headless"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="eu.hohenegger.headless.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="headless_product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="eu.hohenegger.headless"
+            name="Headless Product">
+         <property
+               name="appName"
+               value="Headless Product">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
